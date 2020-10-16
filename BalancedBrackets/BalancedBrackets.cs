@@ -36,6 +36,10 @@ namespace BalancedBracketsNS
                 {
                     brackets--;
                 }
+                if(str.IndexOf(']') < str.IndexOf('['))
+                {
+                    return false;
+                }
             }
             return brackets == 0;
         }
